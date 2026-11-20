@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EduBridge — Studi Kasus Frontend oleh Soaloon Yogi</title>
+    <meta
+      name="description"
+      content="Studi kasus EduBridge: platform deteksi learning gap Matematika kelas XI SMA. Peran saya sebagai Frontend Developer, proses, fitur, dan hasil pengerjaan."
+    />
+    <meta name="author" content="Soaloon Yogi" />
+    <meta name="theme-color" content="#0b0b0c" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="canonical" href="https://domainkamu.com/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:title" content="EduBridge — Studi Kasus Frontend" />
+    <meta
+      property="og:description"
+      content="Mendeteksi learning gap Matematika, mengarahkan penguatan yang tepat. Studi kasus frontend oleh Soaloon Yogi."
+    />
+    <meta property="og:url" content="https://domainkamu.com/" />
+    <meta property="og:image" content="https://domainkamu.com/assets/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link
+      rel="preload"
+      href="assets/fonts/instrument-sans-variable.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      document.documentElement.classList.add("js");
+      setTimeout(function () {
+        if (!window.__portoReady)
+          document.documentElement.classList.remove("js");
+      }, 1500);
+    </script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Lewati ke konten</a>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="wordmark" href="#top">Soaloon Yogi</a>
+        <nav class="site-nav" aria-label="Navigasi utama">
+          <a href="#proyek">Proyek</a>
+          <a href="#peran">Peran</a>
+          <a href="#fitur">Fitur</a>
+          <a href="#hasil">Hasil</a>
+          <a href="#kontak">Kontak</a>
+        </nav>
+        <a class="header-cta" href="mailto:soaloonpoerba13@gmail.com"
+          >Email <span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="wrap">
+          <p class="eyebrow" data-reveal>Studi kasus · 2026</p>
+          <h1
+            class="hero-title"
+            id="hero-title"
+            data-reveal
+            style="--reveal-delay: 60ms"
+          >
+            EduBridge<span class="hero-dot">.</span>
+          </h1>
+
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <p class="hero-lead" data-reveal style="--reveal-delay: 100ms">
+                Platform yang mendeteksi learning gap Matematika kelas XI SMA
+                dan mengarahkan penguatan konsep yang tepat untuk setiap siswa.
+              </p>
+
+              <ul class="hero-meta" data-reveal style="--reveal-delay: 140ms">
+                <li><span>Peran</span>Frontend Developer</li>
+                <li><span>Stack</span>React + Vite</li>
+                <li><span>Konteks</span>Tim lintas disiplin</li>
+                <li><span>Tahun</span>2026</li>
+              </ul>
+
+              <div
+                class="hero-actions"
+                data-reveal
+                style="--reveal-delay: 180ms"
+              >
+                <a
+                  class="button"
+                  href="https://github.com/giii5121/EduBridge"
+                  target="_blank"
+                  rel="noopener"
+                  >Lihat repository <span aria-hidden="true">↗</span></a
+                >
+                <a class="text-link" href="#proyek"
+                  >Baca ringkasan <span aria-hidden="true">↓</span></a
+                >
+              </div>
+            </div>
+
+            <figure
+              class="hero-visual"
+              data-reveal
+              style="--reveal-delay: 220ms"
+            >
+              <div class="hero-screen">
+                <img
+                  class="hero-shot"
+                  src="assets/edubridge/01-homepage-desktop.png"
+                  alt="Homepage EduBridge versi desktop: judul Paham konsepnya, percaya langkahmu, dengan maskot dan ilustrasi jalur belajar."
+                  width="1600"
+                  height="1000"
+                  decoding="async"
+                />
+                <img
+                  class="hero-phone"
+                  src="assets/edubridge/01-homepage-mobile.png"
+                  alt="Homepage EduBridge versi mobile."
+                  width="390"
+                  height="844"
+                  decoding="async"
+                />
+              </div>
+              <figcaption>Homepage EduBridge — desktop dan mobile.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section summary"
+        id="proyek"
+        aria-labelledby="summary-title"
+      >
+        <div class="wrap">
+          <div class="section-head">
+            <p class="section-kicker" data-reveal>01 — Ringkasan</p>
+            <h2 id="summary-title" data-reveal>
+              Masalahnya bukan sekadar nilai.
+            </h2>
+          </div>
+
+          <div class="summary-grid">
+            <div class="summary-copy" data-reveal>
+              <p class="lead">
+                Dua siswa bisa mendapat nilai yang sama, tetapi berangkat dari
+                titik awal yang berbeda. EduBridge memetakan penguasaan konsep
+                lewat pretest, menjalankan diagnosis CDA dan CDM
+                <span class="nb">P-DINA</span>, lalu membandingkannya dengan
+                posttest dalam siklus yang sama.
+              </p>
+              <p>
+                Hasil diagnosis tidak berhenti di angka. Sistem menandai konsep
+                yang sudah dikuasai, gap yang perlu ditutup, dan bukti yang
+                masih kurang — lalu mengarahkan siswa ke penguatan konsep yang
+                relevan.
+              </p>
+            </div>
+
+            <dl class="stat-list" data-reveal style="--reveal-delay: 100ms">
+              <div>
+                <dt>Topik Matematika XI</dt>
+                <dd>6</dd>
+              </div>
+              <div>
+                <dt>Soal pre/post</dt>
+                <dd>180</dd>
+              </div>
+              <div>
+                <dt>Atribut konsep</dt>
+                <dd>18</dd>
+              </div>
+            </dl>
+          </div>
+
+          <ol class="flow" data-reveal style="--reveal-delay: 140ms">
+            <li>
+              <span class="flow-num">01</span>
+              <h3>Pretest</h3>
+              <p>
+                Mengukur titik awal siswa pada topik yang sedang dipelajari.
+              </p>
+            </li>
+            <li>
+              <span class="flow-num">02</span>
+              <h3>Diagnosis awal</h3>
+              <p>
+                CDA dan <span class="nb">P-DINA</span> memetakan penguasaan
+                konsep serta gap yang perlu ditutup.
+              </p>
+            </li>
+            <li>
+              <span class="flow-num">03</span>
+              <h3>Pembelajaran di kelas</h3>
+              <p>
+                Guru mengajar dengan konteks gap yang sudah terlihat, bukan
+                tebakan.
+              </p>
+            </li>
+            <li>
+              <span class="flow-num">04</span>
+              <h3>Penguatan konsep</h3>
+              <p>Materi dan latihan diarahkan ke konsep yang belum dikuasai.</p>
+            </li>
+            <li>
+              <span class="flow-num">05</span>
+              <h3>Posttest</h3>
+              <p>Hasil dibandingkan dengan pretest dalam siklus yang sama.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section role" id="peran" aria-labelledby="role-title">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="section-kicker" data-reveal>02 — Peran saya</p>
+            <h2 id="role-title" data-reveal>Frontend Developer.</h2>
+          </div>
+
+          <div class="role-grid">
+            <div class="role-copy" data-reveal>
+              <p class="lead">
+                Saya memegang fondasi antarmuka yang menghubungkan alur
+                diagnosis dengan pengalaman belajar siswa.
+              </p>
+              <p>
+                Fokus saya adalah membuat data yang rumit terasa bisa
+                ditindaklanjuti: siswa tahu harus mulai dari mana, guru bisa
+                melihat pola penguasaan, dan setiap langkah asesmen terasa
+                jelas.
+              </p>
+
+              <ul class="role-list">
+                <li>
+                  Membangun fondasi frontend: halaman masuk dan daftar,
+                  dashboard siswa, serta jalur belajar.
+                </li>
+                <li>
+                  Menerjemahkan alur <span class="nb">CDA–P-DINA</span> menjadi
+                  UI bertahap: pretest, diagnosis, penguatan, dan posttest.
+                </li>
+                <li>
+                  Merapikan navigasi dan layout: sticky navbar, ikon dashboard,
+                  layout pre/post test, dan layout autentikasi.
+                </li>
+                <li>
+                  Menjaga konsistensi responsive dan aksesibilitas: label,
+                  navigasi keyboard, serta tampilan 320–390 px.
+                </li>
+                <li>
+                  Berkolaborasi dengan backend dan AI untuk menampilkan
+                  diagnosis, progres, dan materi.
+                </li>
+              </ul>
+            </div>
+
+            <div class="role-split" data-reveal style="--reveal-delay: 100ms">
+              <div class="role-card role-card--mine">
+                <h3>Yang saya pegang</h3>
+                <ul>
+                  <li>UI siswa, autentikasi, dan dashboard</li>
+                  <li>Jalur belajar dan komponen asesmen</li>
+                  <li>Layout pre/post test dan navigasi</li>
+                  <li>Polish responsive dan aksesibilitas</li>
+                </ul>
+              </div>
+              <div class="role-card">
+                <h3>Dikerjakan bersama tim</h3>
+                <ul>
+                  <li>API, database, dan aturan akses</li>
+                  <li>
+                    Model <span class="nb">P-DINA</span> dan pipeline diagnosis
+                  </li>
+                  <li>Integrasi Gemini dan validasi narasi</li>
+                  <li>Deployment dan pengujian end-to-end</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section features"
+        id="fitur"
+        aria-labelledby="features-title"
+      >
+        <div class="wrap">
+          <div class="section-head">
+            <p class="section-kicker" data-reveal>03 — Fitur utama</p>
+            <h2 id="features-title" data-reveal>
+              Alur yang utuh, dari pretest sampai refleksi.
+            </h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature" data-reveal>
+              <figure class="feature-figure">
+                <img
+                  src="assets/edubridge/02-belajar-desktop.png"
+                  alt="Dashboard siswa EduBridge: sapaan, jalur belajar, misi harian, XP, dan level."
+                  width="1600"
+                  height="1000"
+                  decoding="async"
+                />
+              </figure>
+              <div class="feature-body">
+                <p class="feature-label">Siswa</p>
+                <h3>
+                  Jalur belajar yang terasa seperti progres, bukan daftar tugas.
+                </h3>
+                <p>
+                  XP, level, streak, maskot, dan kelanjutan pembelajaran disusun
+                  agar siswa tahu langkah berikutnya.
+                </p>
+              </div>
+            </article>
+
+            <article class="feature" data-reveal style="--reveal-delay: 80ms">
+              <figure class="feature-figure">
+                <img
+                  src="assets/edubridge/07-kuis-desktop.png"
+                  alt="Halaman asesmen CDA dengan soal invers fungsi, pilihan jawaban, timer, dan navigasi soal."
+                  width="1600"
+                  height="1000"
+                  decoding="async"
+                />
+              </figure>
+              <div class="feature-body">
+                <p class="feature-label">Asesmen</p>
+                <h3>Soal diagnostik dengan notasi matematika yang terbaca.</h3>
+                <p>
+                  Notasi KaTeX, navigasi soal, timer, dan pembahasan setelah
+                  jawaban dikumpulkan.
+                </p>
+              </div>
+            </article>
+
+            <article class="feature" data-reveal>
+              <figure class="feature-figure">
+                <img
+                  src="assets/edubridge/06-progres-desktop.png"
+                  alt="Halaman progres siswa: perbandingan pretest dan posttest, gap tertutup, dan detail per topik."
+                  width="1600"
+                  height="1000"
+                  decoding="async"
+                />
+              </figure>
+              <div class="feature-body">
+                <p class="feature-label">Progres</p>
+                <h3>Perubahan yang bisa dilihat, bukan hanya dirasakan.</h3>
+                <p>
+                  Perbandingan pre/post, peta penguasaan, dan detail gap per
+                  topik dalam satu tampilan.
+                </p>
+              </div>
+            </article>
+
+            <article class="feature" data-reveal style="--reveal-delay: 80ms">
+              <figure class="feature-figure">
+                <img
+                  src="assets/edubridge/08-guru-desktop.png"
+                  alt="Ruang guru EduBridge: ringkasan kelas, fase pembelajaran, dan pemantauan penguasaan siswa."
+                  width="1600"
+                  height="1000"
+                  decoding="async"
+                />
+              </figure>
+              <div class="feature-body">
+                <p class="feature-label">Guru</p>
+                <h3>Ruang guru untuk membaca kebutuhan kelas.</h3>
+                <p>
+                  Guru mengatur fase kelas, memantau penguasaan, dan mengekspor
+                  data untuk ditindaklanjuti.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div
+            class="gallery"
+            role="group"
+            aria-label="Tangkapan layar pendukung"
+          >
+            <figure data-reveal>
+              <img
+                src="assets/edubridge/10-editor-ai-desktop.png"
+                alt="Editor materi EduBridge dengan arahan untuk AI dan pilihan jumlah bagian."
+                width="1600"
+                height="1000"
+                decoding="async"
+              />
+              <figcaption>
+                Generator materi AI — draf tetap melewati validasi manusia.
+              </figcaption>
+            </figure>
+            <figure data-reveal style="--reveal-delay: 60ms">
+              <img
+                src="assets/edubridge/03-mode-gelap-desktop.png"
+                alt="Tampilan dashboard siswa EduBridge dalam mode gelap."
+                width="1600"
+                height="1000"
+                decoding="async"
+              />
+              <figcaption>
+                Mode gelap yang konsisten di seluruh ruang belajar.
+              </figcaption>
+            </figure>
+            <figure data-reveal style="--reveal-delay: 120ms">
+              <img
+                src="assets/edubridge/04-katalog-desktop.png"
+                alt="Katalog materi EduBridge dengan enam topik Matematika kelas XI."
+                width="1600"
+                height="1000"
+                decoding="async"
+              />
+              <figcaption>Katalog enam topik Matematika kelas XI.</figcaption>
+            </figure>
+            <figure data-reveal style="--reveal-delay: 180ms">
+              <img
+                src="assets/edubridge/12-admin-desktop.png"
+                alt="Panel admin EduBridge untuk pengguna, kelas, materi, dan layanan diagnosis."
+                width="1600"
+                height="1000"
+                decoding="async"
+              />
+              <figcaption>
+                Panel admin untuk pengguna, kelas, materi, dan layanan.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section tech" id="teknologi" aria-labelledby="tech-title">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="section-kicker" data-reveal>04 — Teknologi</p>
+            <h2 id="tech-title" data-reveal>Di balik antarmuka.</h2>
+          </div>
+
+          <div class="tech-grid">
+            <div class="tech-copy" data-reveal>
+              <p class="lead">
+                Frontend adalah bagian yang saya kerjakan. Backend, model, dan
+                deployment dikerjakan bersama tim lintas disiplin.
+              </p>
+              <p>
+                Antarmuka berbicara ke API aplikasi, sementara diagnosis dan
+                narasi berjalan di layanan terpisah. Pemisahan ini membuat UI
+                tetap bisa menjelaskan status sistem dengan jujur saat layanan
+                AI tidak tersedia.
+              </p>
+              <ul class="chips">
+                <li>React</li>
+                <li>Vite</li>
+                <li>Node.js 24</li>
+                <li>SQLite</li>
+                <li>FastAPI</li>
+                <li>P-DINA</li>
+                <li>Gemini</li>
+                <li>KaTeX</li>
+                <li>Docker</li>
+              </ul>
+            </div>
+
+            <div
+              class="arch"
+              role="group"
+              data-reveal
+              style="--reveal-delay: 100ms"
+              aria-label="Arsitektur EduBridge"
+            >
+              <div class="arch-node">
+                <span class="arch-label">Frontend</span>
+                <strong>React + Vite</strong>
+                <p>UI siswa, guru, dan admin</p>
+              </div>
+              <span class="arch-arrow" aria-hidden="true">→</span>
+              <div class="arch-node">
+                <span class="arch-label">API</span>
+                <strong>Node.js + SQLite</strong>
+                <p>Auth, asesmen, progres</p>
+              </div>
+              <span class="arch-arrow" aria-hidden="true">→</span>
+              <div class="arch-node">
+                <span class="arch-label">AI</span>
+                <strong>FastAPI + <span class="nb">P-DINA</span></strong>
+                <p>Diagnosis dan Gemini</p>
+              </div>
+            </div>
+          </div>
+
+          <p class="tech-note" data-reveal style="--reveal-delay: 140ms">
+            Notasi matematika dirender dengan KaTeX di lapisan presentasi, tanpa
+            mengubah teks soal, kunci, atau parameter model.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="section results"
+        id="hasil"
+        aria-labelledby="results-title"
+      >
+        <div class="wrap">
+          <div class="section-head">
+            <p class="section-kicker" data-reveal>05 — Hasil</p>
+            <h2 id="results-title" data-reveal>
+              Diuji, bukan hanya tampak selesai.
+            </h2>
+          </div>
+
+          <dl class="result-grid">
+            <div data-reveal>
+              <dt>Endpoint terdokumentasi</dt>
+              <dd>42</dd>
+              <p>33 Node.js + 9 FastAPI</p>
+            </div>
+            <div data-reveal style="--reveal-delay: 60ms">
+              <dt>Skenario browser</dt>
+              <dd>18</dd>
+              <p>Desktop dan mobile</p>
+            </div>
+            <div data-reveal style="--reveal-delay: 120ms">
+              <dt>Diagnosis bersamaan</dt>
+              <dd>60</dd>
+              <p>Diuji pada antrean inferensi</p>
+            </div>
+            <div data-reveal style="--reveal-delay: 180ms">
+              <dt>Kerentanan npm</dt>
+              <dd>0</dd>
+              <p>Audit level low</p>
+            </div>
+          </dl>
+
+          <div class="result-details">
+            <ul class="result-list" data-reveal>
+              <li>
+                36 tes backend lulus, termasuk CRUD materi, izin, versi, dan
+                audit.
+              </li>
+              <li>93 tes AI lulus, dengan satu tes live opsional dilewati.</li>
+              <li>
+                18 skenario browser lulus dalam satu eksekusi, termasuk mode
+                gelap dan generator materi.
+              </li>
+              <li>
+                Tampilan diuji pada lebar 320–390 px tanpa overflow horizontal.
+              </li>
+            </ul>
+
+            <aside class="callout" data-reveal style="--reveal-delay: 80ms">
+              <h3>Batas yang perlu disebut</h3>
+              <p>
+                Kalibrasi <span class="nb">P-DINA</span> masih sintetis. Ini
+                menguji integrasi dan perilaku statistik model, bukan validitas
+                untuk siswa nyata. Validasi instrumen perlu dilakukan bersama
+                guru dan data respons nyata sebelum dipakai untuk keputusan
+                akademik.
+              </p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="kontak" aria-labelledby="contact-title">
+        <div class="wrap">
+          <p class="section-kicker" data-reveal>06 — Kontak</p>
+          <h2 id="contact-title" data-reveal>
+            Tertarik dengan cara saya membangun antarmuka yang menjelaskan data
+            rumit?
+          </h2>
+          <div class="contact-body">
+            <p data-reveal style="--reveal-delay: 80ms">
+              Saya terbuka untuk diskusi tentang frontend, produk edukasi, atau
+              kolaborasi berikutnya.
+            </p>
+            <a
+              class="contact-email"
+              href="mailto:soaloonpoerba13@gmail.com"
+              data-reveal
+              style="--reveal-delay: 120ms"
+              >soaloonpoerba13@<wbr />gmail.com</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="wrap footer-inner">
+          <ul class="socials">
+            <li>
+              <a href="https://github.com/giii5121" rel="me" target="_blank"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/soaloon-poerba-32714437a"
+                rel="me"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/giii5121/EduBridge" target="_blank"
+                >Repository EduBridge</a
+              >
+            </li>
+            <li><a href="mailto:soaloonpoerba13@gmail.com">Email</a></li>
+          </ul>
+          <p class="footer-note">
+            © <span data-year>2026</span> Soaloon Yogi. Dibuat dengan HTML,
+            CSS, dan JavaScript.
+          </p>
+          <a class="back-top" href="#top"
+            >Kembali ke atas <span aria-hidden="true">↑</span></a
+          >
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
